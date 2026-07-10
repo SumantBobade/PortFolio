@@ -12,7 +12,7 @@ const skillCategories = [
   {
     title: "Programming",
     icon: <Code2 size={22} />,
-    skills: ["C#", "C++", "Python", "JavaScript", "SQL"],
+    skills: ["C","C#", "C++", "Python", "JavaScript", "SQL", "HTML", "CSS"],
   },
   {
     title: "Backend",
