@@ -3,6 +3,10 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
+import Projects from "./Components/Projects";
+import ContactMe from "./Components/ContactMe";
+import Footer from "./Components/Footer";
+import ClosingCTA from "./Components/ClosingCTA";
 
 function App() {
   return (
@@ -18,7 +22,11 @@ function App() {
 
         {/* Hero Section */}
         <Hero />
-        <About/>
+        <About />
+        <Projects />
+        <ContactMe />
+        <ClosingCTA/>
+        <Footer/>
       </div>
     </>
   );
