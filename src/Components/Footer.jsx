@@ -4,7 +4,9 @@ import {
   FaLinkedin,
   FaArrowUp,
   FaHeart,
+  FaItchIo,
 } from "react-icons/fa";
+import { SiHuggingface } from "react-icons/si";
 
 export default function Footer() {
   const scrollToTop = () =>
@@ -100,7 +102,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://linkedin.com/in/YOUR-LINKEDIN"
+              href="https://linkedin.com/in/sumant-bobade/"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -117,6 +119,46 @@ export default function Footer() {
               "
             >
               <FaLinkedin size={22} />
+            </a>
+
+            <a
+              href="https://huggingface.co/SumantBobade"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+              flex
+              h-12
+              w-12
+              items-center
+              justify-center
+              rounded-full
+              bg-white/5
+              transition
+              hover:bg-cyan-500
+              hover:scale-110
+              "
+            >
+              <SiHuggingface size={22} />
+            </a>
+
+            <a
+              href="https://sumantbobade.itch.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+              flex
+              h-12
+              w-12
+              items-center
+              justify-center
+              rounded-full
+              bg-white/5
+              transition
+              hover:bg-cyan-500
+              hover:scale-110
+              "
+            >
+              <FaItchIo size={22} />
             </a>
 
             {/* Back To Top */}

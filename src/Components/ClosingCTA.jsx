@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
+import resume from "/Resume/Sumant_s_ASP.NET.pdf";
 
 export default function ClosingCTA() {
   return (
@@ -57,7 +58,7 @@ export default function ClosingCTA() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href={resume}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 rounded-full border border-white/10 px-8 py-4 font-semibold text-white transition duration-300 hover:border-cyan-400 hover:bg-white/5"

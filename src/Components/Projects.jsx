@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import projects from "../data/projects";
 
-const filters = ["All", "AI", "Full Stack", "Unity"];
+const filters = ["All", "AI", "Full Stack", "Game Development"];
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -37,9 +37,7 @@ export default function Projects() {
           transition={{ duration: .6 }}
           className="text-center"
         >
-          <p className="mb-3 text-cyan-400 uppercase tracking-[0.35em]">
-            Portfolio
-          </p>
+          
 
           <h2 className="text-5xl font-black">
             Featured{" "}

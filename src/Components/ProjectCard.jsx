@@ -78,9 +78,9 @@ export default function ProjectCard({ project, index }) {
             GitHub
           </a>
 
-          {project.demo && (
+          {project.live && (
             <a
-              href={project.demo}
+              href={project.live}
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 py-3 transition hover:scale-105"

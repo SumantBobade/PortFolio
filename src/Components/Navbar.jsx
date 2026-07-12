@@ -8,6 +8,8 @@ import {
   FileText,
 } from "lucide-react";
 
+import resume from "/Resume/Sumant_s_ASP.NET.pdf";
+
 const items = [
   { name: "Home", icon: Home, href: "#home" },
   { name: "About", icon: User, href: "#about" },
@@ -15,6 +17,8 @@ const items = [
   { name: "Experience", icon: Briefcase, href: "#experience" },
   { name: "Contact", icon: Mail, href: "#contact" },
 ];
+
+
 
 export default function Navbar() {
   const [small, setSmall] = useState(false);
@@ -91,7 +95,8 @@ export default function Navbar() {
             })}
 
             <a
-              href="/resume.pdf"
+              href={resume}
+            target = "_blank"
               className="
               ml-3
               flex
