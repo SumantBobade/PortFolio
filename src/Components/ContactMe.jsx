@@ -3,7 +3,7 @@ import {
   FaEnvelope,
   FaGithub,
   FaLinkedin,
-    FaMapMarkerAlt,
+  FaMapMarkerAlt,
   FaPaperPlane,
 } from "react-icons/fa";
 
@@ -29,10 +29,6 @@ export default function ContactMe() {
           transition={{ duration: 0.6 }}
           className="mb-20 text-center"
         >
-          <p className="mb-3 uppercase tracking-[0.35em] text-cyan-400">
-            CONTACT
-          </p>
-
           <h2 className="text-5xl font-black">
             Get In{" "}
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
@@ -338,7 +334,6 @@ export default function ContactMe() {
                 Send Message
               </motion.button>
             </form>
-
           </motion.div>
         </div>
       </div>

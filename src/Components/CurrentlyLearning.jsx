@@ -47,7 +47,7 @@ const learningItems = [
 
 function CurrentlyLearning() {
   return (
-    <div>
+    <>
       {/* ================= CURRENTLY EXPLORING ================= */}
 
       <div className="mt-32">
@@ -57,9 +57,6 @@ function CurrentlyLearning() {
           viewport={{ once: true }}
           className="mb-14 text-center"
         >
-          <p className="mb-3 uppercase tracking-[0.35em] text-cyan-400">
-            CONTINUOUS LEARNING
-          </p>
 
           <h3 className="text-4xl font-bold">
             Currently{" "}
@@ -125,7 +122,7 @@ function CurrentlyLearning() {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

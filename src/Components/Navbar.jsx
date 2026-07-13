@@ -9,16 +9,14 @@ import {
 } from "lucide-react";
 
 import resume from "/Resume/Sumant_s_ASP.NET.pdf";
-
+import { Link } from "react-router-dom";
 const items = [
-  { name: "Home", icon: Home, href: "#home" },
-  { name: "About", icon: User, href: "#about" },
-  { name: "Projects", icon: FolderGit2, href: "#projects" },
-  { name: "Experience", icon: Briefcase, href: "#experience" },
-  { name: "Contact", icon: Mail, href: "#contact" },
+  { name: "Home", icon: Home, to: "/" },
+  { name: "About", icon: User, to: "/about" },
+  { name: "Projects", icon: FolderGit2, to: "/projects" },
+  { name: "Experience", icon: Briefcase, to: "/experience" },
+  { name: "Contact", icon: Mail, to: "/contact" },
 ];
-
-
 
 export default function Navbar() {
   const [small, setSmall] = useState(false);
@@ -51,8 +49,8 @@ export default function Navbar() {
 
               return (
                 <li key={item.name}>
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.to}
                     className="
                     group
                     relative
@@ -89,14 +87,14 @@ export default function Navbar() {
                       group-hover:w-8
                     "
                     />
-                  </a>
+                  </Link>
                 </li>
               );
             })}
 
             <a
               href={resume}
-            target = "_blank"
+              target="_blank"
               className="
               ml-3
               flex
@@ -119,12 +117,8 @@ export default function Navbar() {
             </a>
           </ul>
         </nav>
-
-        
-          </div>
-          <div className="fixed top-9 right-8 z-[60]">
-          
-        </div>
+      </div>
+      <div className="fixed top-9 right-8 z-[60]"></div>
     </>
   );
 }
